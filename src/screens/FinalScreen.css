@@ -1,0 +1,91 @@
+.final-screen {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.final-content {
+    text-align: center;
+    padding: 48px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border-radius: 28px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px rgba(201, 24, 74, 0.2);
+    width: 100%;
+}
+
+.final-title {
+    font-family: var(--font-romantic);
+    font-size: 3.2rem;
+    color: var(--white);
+    margin-bottom: 16px;
+    text-shadow: 0 0 24px rgba(255, 117, 143, 0.5);
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+.final-headline {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 22px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.final-message {
+    text-align: left;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    margin-bottom: 22px;
+}
+
+.final-message p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.final-message p:last-child {
+    margin-bottom: 0;
+}
+
+.final-thanks {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 14px;
+    border-radius: 14px;
+    border-left: 4px solid rgba(255, 255, 255, 0.45);
+    margin-top: 6px;
+    font-weight: 600 !important;
+}
+
+.final-hearts {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin-top: 6px;
+}
+
+@media (max-width: 500px) {
+    .final-title {
+        font-size: 2.5rem;
+    }
+
+    .final-headline {
+        font-size: 1.15rem;
+    }
+
+    .final-content {
+        padding: 34px 20px;
+        margin: 12px;
+    }
+
+    .final-message p {
+        font-size: 0.95rem;
+    }
+}

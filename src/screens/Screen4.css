@@ -1,0 +1,88 @@
+/* Countdown */
+.countdown-number {
+    font-family: var(--font-romantic);
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: 0 0 30px rgba(255, 117, 143, 0.6);
+    animation: countdownPop 1s ease-in-out;
+}
+
+/* Proposal Buttons */
+.proposal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.btn-yes {
+    font-size: 1.2rem;
+    padding: 16px 42px;
+    z-index: 2;
+}
+
+.btn-no {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.6s ease, transform 0.3s ease;
+}
+
+.btn-no:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.btn-no:active {
+    transform: scale(0.95);
+}
+
+.btn-no.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Popup message */
+.popup-message {
+    background: linear-gradient(135deg, #ff758f 0%, #c9184a 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(201, 24, 74, 0.3);
+}
+
+/* Funny message */
+.funny-message {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 14px 18px;
+    border-radius: 14px;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Attempts hint */
+.attempts-hint {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+@media (max-width: 500px) {
+    .countdown-number {
+        font-size: 4rem;
+    }
+
+    .btn-no {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
